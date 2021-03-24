@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".API.LoginActivity"
+    android:background="#332973">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="330dp"
+        android:layout_height="214dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/loginlogo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/loginbutton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="#EF3A01  "
+        android:text="Войти"
+        app:layout_constraintEnd_toEndOf="@+id/edpass"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/edpass"
+        app:layout_constraintTop_toBottomOf="@+id/edpass" />
+
+    <EditText
+        android:id="@+id/edemail"
+        android:layout_width="259dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="24dp"
+        android:background="@android:drawable/divider_horizontal_bright"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="@android:color/darker_gray"
+        android:textColorHint="@android:color/darker_gray"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <EditText
+        android:id="@+id/edpass"
+        android:layout_width="259dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="16dp"
+        android:background="@android:drawable/divider_horizontal_bright"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="@android:color/darker_gray"
+        android:textColorHint="@android:color/darker_gray"
+        app:layout_constraintEnd_toEndOf="@+id/edemail"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/edemail"
+        app:layout_constraintTop_toBottomOf="@+id/edemail" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
